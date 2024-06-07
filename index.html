@@ -75,13 +75,15 @@
       }
 
       function addMarker(i, data) {
+        var iconBase = 'https://d.kuku.lu/phz2ctn3h';
         var markerLatLng = new google.maps.LatLng({
           lat: Number(data['緯度']),
           lng: Number(data['経度'])
         });
         marker[i] = new google.maps.Marker({
           position: markerLatLng,
-          map: map
+          map: map,
+          icon: iconBase
         });
 
 
