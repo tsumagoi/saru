@@ -82,8 +82,18 @@
         marker[i] = new google.maps.Marker({
           position: markerLatLng,
           map: map,
-　　　　　　　　　　　　　　　　　　　　icon: {url: 'github.com/tsumagoi/saru/blob/main/%E3%82%B5%E3%83%AB%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3.png'// お好みの画像までのパスを指定
-			   
+	icon: {
+		fillColor: "#FF0000",                //塗り潰し色
+		fillOpacity: 0.8,                    //塗り潰し透過率
+		path: google.maps.SymbolPath.CIRCLE, //円を指定
+		scale: 20,                           //円のサイズ
+		strokeColor: "#FF0000",              //枠の色
+		strokeWeight: 1.0                    //枠の透過率
+	},
+	label: {
+		text: '猿',                           //ラベル文字
+		color: '#FFFFFF',                    //文字の色
+		fontSize: '20px'                     //文字のサイズ
 	}
         });
 
