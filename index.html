@@ -75,19 +75,13 @@
       }
 
       function addMarker(i, data) {
-        var iconBase = 'https://drive.google.com/file/d/1f2sVmNbCo2m7OQSsuKN_Y4qiSHJopHgC/view?usp=drive_link';
         var markerLatLng = new google.maps.LatLng({
           lat: Number(data['緯度']),
           lng: Number(data['経度'])
         });
         marker[i] = new google.maps.Marker({
           position: markerLatLng,
-          map: map,
-          icon: {
-		path: 'M -8,-8 8,8 M 8,-8 -8,8',     //座標（×）
-		strokeColor: "#000000",              //線の色
-		strokeWeight: 4.0                    //線の太さ
-	}
+          map: map
         });
 
 
