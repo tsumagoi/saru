@@ -18,7 +18,7 @@
         bottom: 10px;
         left: 10px;
         width: 20%;
-        height: 80%;
+        height: 70%;
         border: 1px solid #666;
         padding: 1px;
         background-color: white;
@@ -203,7 +203,7 @@
           var latitude = markerData[i]['緯度'];
           if (!latitude) { continue; }
           addMarker(i, markerData[i]);
-          var name = markerData[i]['名称']+[' / ']+markerData[i]['時間'];
+          var name = markerData[i]['名称']+['/']+markerData[i]['時間'];
 
           sidebar_html += ` <br /><a href="javascript:openWindow(${i})">${name}<\/a>`;
         }
